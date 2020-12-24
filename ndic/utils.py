@@ -55,3 +55,18 @@ def get_word_meaning(response, xth):
         if 1 <= xth and xth <= meaning_cnt:
             word_meaning = word_meaning_elements[xth-1].text
     return word_meaning
+
+def get_word_meanings(response):
+    """
+    Parse a HTML document and get a text of xth meaning
+    from particular tags
+    """
+
+    dom = BeautifulSoup(response.content, "lxml")
+    div_element = dom.select_one(".word_num") or None
+    word_meanings = []
+    if div_element:
+        word_meaning_elements = div_element.select(".fnt_k05")
+        for word_meaning_element in word_meaning_elements:
+            word_meanings.append(word_meaning_element.text)
+    return word_meanings

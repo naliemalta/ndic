@@ -6,7 +6,7 @@ from pkg_resources import get_distribution
 from ndic.search import search
 
 
-__version__ = get_distribution('ndic').version
+__version__ = '1.9'
 
 __all__ = [
     'search',
