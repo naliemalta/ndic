@@ -10,7 +10,7 @@ from ndic.search import search_all
 from ndic.exceptions import NdicConnectionError
 
 
-class NdicTestCase(TestCase):
+class NdicSearchAllTestCase(TestCase):
 
     def test_search_korean_word_multiple_meaning(self):
         test_search_korean_word = "말"
