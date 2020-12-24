@@ -6,10 +6,10 @@ This module provides functions for searching the word by Ndic
 """
 from __future__ import absolute_import
 
-from ndic.utils import make_naver_endic_url
-from ndic.utils import request_naver_endic_url
-from ndic.utils import get_word_meaning
-from ndic.utils import get_word_meanings
+from .utils import make_naver_endic_url
+from .utils import request_naver_endic_url
+from .utils import get_word_meaning
+from .utils import get_word_meanings
 
 def search(search_word, xth=1):
     """

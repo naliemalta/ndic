@@ -6,7 +6,7 @@ This module contains the set of Ndic' exceptions.
 """
 from __future__ import absolute_import
 
-from ndic.constants import CONNECTION_ERROR_MESSAGE
+from .constants import CONNECTION_ERROR_MESSAGE
 
 
 class NdicConnectionError(Exception):

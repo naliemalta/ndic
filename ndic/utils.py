@@ -9,8 +9,8 @@ from __future__ import absolute_import
 import requests
 from bs4 import BeautifulSoup
 
-from ndic.constants import NAVER_ENDIC_URL
-from ndic.exceptions import NdicConnectionError
+from .constants import NAVER_ENDIC_URL
+from .exceptions import NdicConnectionError
 
 
 def make_naver_endic_url(search_word):
